@@ -24,7 +24,7 @@ public class Enigma {
         String output = "";
         String testRange = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         input = input.toUpperCase();
-        while (input.length() > 0) {
+        while (!input.isEmpty()) {
             if (testRange.indexOf(input.charAt(0)) > -1) {
                 letter = input.charAt(0);
                 letter = plugboard.getLetter(letter);
