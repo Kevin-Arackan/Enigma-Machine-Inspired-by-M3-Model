@@ -47,6 +47,7 @@ public class Enigma {
             input = input.substring(1);
         }
         System.out.println(output);
+        reader.close();
     }
 }
 // Author: Kevin Arackan
