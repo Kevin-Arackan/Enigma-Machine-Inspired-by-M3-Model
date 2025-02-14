@@ -15,7 +15,7 @@ public class Plugboard {
     }
 
     public void adjustOutput(String settings) {
-        while (settings.indexOf(" ") > -1) {
+        while (settings.contains(" ")) {
             firstLetter = settings.charAt(0);
             lastLetter = settings.charAt(1);
             index = inputArray.indexOf(firstLetter);

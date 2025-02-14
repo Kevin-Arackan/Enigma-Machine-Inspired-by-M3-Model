@@ -21,7 +21,7 @@ public class Enigma {
         rotor3.grundstellung(args[10].charAt(2));
         System.out.println("What do you want to encrypt or decrypt?");
         String input = reader.nextLine();
-        String output = "";
+        StringBuilder output = new StringBuilder();
         String testRange = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         input = input.toUpperCase();
         while (!input.isEmpty()) {
@@ -39,10 +39,10 @@ public class Enigma {
                 letter = rotor2.getOtherLetter(letter);
                 letter = rotor3.getOtherLetter(letter);
                 letter = plugboard.getLetter(letter);
-                output += letter;
+                output.append(letter);
             }
             else {
-                output += input.charAt(0);
+                output.append(input.charAt(0));
             }
             input = input.substring(1);
         }

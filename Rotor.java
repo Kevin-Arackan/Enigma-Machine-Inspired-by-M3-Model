@@ -1,7 +1,7 @@
 // Author: Kevin Arackan
 public class Rotor
 {
-    private String rotorInput;
+    private final String rotorInput;
     private String rotorOutput;
     private String rotorNumber;
     private char ringstellung;
@@ -74,7 +74,7 @@ public class Rotor
         this.num = 0;
         this.input = this.rotorOutput;
         this.output = "";
-        while (this.input.length() > 0)
+        while (!this.input.isEmpty())
         {
             this.var = this.input.charAt(0);
             if (this.var == 'A')
