@@ -5,7 +5,7 @@ public class Enigma {
 
     public static void main(String[] args) {
         // How to execute: java Enigma rotor1ID rotor2ID rotor3ID ringSetting plugboardSettings initialRotorPositions
-        // Example for 1st day of month: java Enigma V II I IHQ ET LD NP OS RA UW UJJ
+        // Example: java Enigma V II I IHQ ET LD NP QS RA UW UJJ
         Scanner reader = new Scanner(System.in);
         String ringstellung = args[3];
         Rotor rotor1 = new Rotor(args[0], ringstellung.charAt(0));
