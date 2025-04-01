@@ -1,1 +1,1 @@
-This is a README
+This project was more or less inspired by the process of Cryptograhpy. Although very basic and nowhere near as modern as current methods of encryption and decryption, this project taught me a lot about basic fundamentals on the ideas behind cryptography. In addition, this also taught me how to build my own basic encryption algorithm.
