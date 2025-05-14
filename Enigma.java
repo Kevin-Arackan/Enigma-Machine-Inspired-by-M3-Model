@@ -29,7 +29,7 @@ public class Enigma {
         System.out.println("Enter plugboard settings:");
         String plugboardSettings = reader.nextLine();
 
-        char letter = 'A';
+        char letter;
         Plugboard plugboard = new Plugboard(plugboardSettings);
         plugboard.adjustOutput(plugboardSettings);
         Reflector reflector = new Reflector("B");
